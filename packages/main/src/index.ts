@@ -15,7 +15,13 @@ export async function initApp(initConfig: AppInitConfig) {
   const _logger = new Logger()
 
   const moduleRunner = createModuleRunner()
-    .init(createWindowManagerModule({ initConfig, openDevTools: import.meta.env.DEV }))
+    // 默认不自动打开 DevTools，除非显式设置环境变量 OPEN_DEVTOOLS=true
+    .init(
+      createWindowManagerModule({
+        initConfig,
+        openDevTools: import.meta.env.OPEN_DEVTOOLS === 'true',
+      })
+    )
     .init(disallowMultipleAppInstance())
     .init(terminateAppOnLastWindowClose())
     .init(hardwareAccelerationMode({ enable: false }))
