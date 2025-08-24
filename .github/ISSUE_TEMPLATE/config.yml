@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Propose an idea
+    url: https://github.com/michael-lu-cn/vite-electron-builder-cn
+    about: Discuss any ideas and feature requests
+  - name: Ask a question
+    url: https://github.com/michael-lu-cn/vite-electron-builder-cn
+    about: Please ask any Q&A here
