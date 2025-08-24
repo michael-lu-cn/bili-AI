@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import viteLogo from '/vite.svg'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { send } from '@app/preload'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { useAppStore } from './store/useAppStore'
 import { HealthChecker } from './utils/healthCheck'
@@ -86,6 +87,20 @@ function AppContent() {
         </div>
         <button type="button" onClick={reset} className="reset-btn">
           Reset
+        </button>
+        <button
+          type="button"
+          onClick={async () => {
+            try {
+              const res = await send('open-bili', '')
+              console.log('open-bili result', res)
+            } catch (e) {
+              console.error('open-bili error', e)
+            }
+          }}
+          className="open-bili-btn"
+        >
+          打开 B 站
         </button>
         <button type="button" onClick={toggleTheme} className="theme-btn">
           Switch to {theme === 'light' ? 'dark' : 'light'} theme
