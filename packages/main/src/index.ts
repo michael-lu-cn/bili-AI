@@ -1,3 +1,5 @@
+import { spawn } from 'node:child_process'
+import { ipcMain } from 'electron'
 import type { AppInitConfig } from './AppInitConfig.js'
 import { createModuleRunner } from './ModuleRunner.js'
 import { terminateAppOnLastWindowClose } from './modules/ApplicationTerminatorOnLastWindowClose.js'
@@ -15,7 +17,13 @@ export async function initApp(initConfig: AppInitConfig) {
   const _logger = new Logger()
 
   const moduleRunner = createModuleRunner()
-    .init(createWindowManagerModule({ initConfig, openDevTools: import.meta.env.DEV }))
+    // 默认不自动打开 DevTools，除非显式设置环境变量 OPEN_DEVTOOLS=true
+    .init(
+      createWindowManagerModule({
+        initConfig,
+        openDevTools: import.meta.env.OPEN_DEVTOOLS === 'true',
+      })
+    )
     .init(disallowMultipleAppInstance())
     .init(terminateAppOnLastWindowClose())
     .init(hardwareAccelerationMode({ enable: false }))
@@ -47,4 +55,19 @@ export async function initApp(initConfig: AppInitConfig) {
     )
 
   await moduleRunner.run()
+
+  // IPC: 在主进程中处理打开 B 站 的请求，启动独立子进程执行 playwright 脚本
+  ipcMain.handle('open-bili', async () => {
+    try {
+      const child = spawn(process.execPath, ['packages/scripts/open-bili.mjs'], {
+        cwd: process.cwd(),
+        detached: true,
+        stdio: 'ignore',
+      })
+      child.unref()
+      return { ok: true }
+    } catch (err) {
+      return { ok: false, error: String(err) }
+    }
+  })
 }

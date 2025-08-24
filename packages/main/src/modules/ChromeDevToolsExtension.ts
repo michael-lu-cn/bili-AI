@@ -17,10 +17,21 @@ export class ChromeDevToolsExtension implements AppModule {
     try {
       await app.whenReady()
 
-      // 动态导入 electron-devtools-installer
+      // 动态导入 electron-devtools-installer，并尽量兼容不同的导出方式
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const installer = (await import('electron-devtools-installer')) as any
-      const { REACT_DEVELOPER_TOOLS, default: installExtension } = installer
+      const REACT_DEVELOPER_TOOLS =
+        installer.REACT_DEVELOPER_TOOLS ?? installer.default?.REACT_DEVELOPER_TOOLS
+      // 兼容 default 导出或命名导出
+      const installExtension = installer.default ?? installer.installExtension ?? installer
+
+      // 如果 installExtension 不是函数则跳过并打印警告，避免抛出异常导致主进程异常
+      if (typeof installExtension !== 'function') {
+        console.warn(
+          'electron-devtools-installer export is not a function, skipping DevTools install'
+        )
+        return
+      }
 
       // 根据扩展名称选择对应的扩展
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
