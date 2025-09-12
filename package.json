@@ -36,7 +36,7 @@
     "@npmcli/map-workspaces": "5.0.0",
     "@playwright/test": "1.55.0",
     "@swc/core": "^1.13.5",
-    "@types/node": "24.3.1",
+    "@types/node": "24.3.2",
     "@vitejs/plugin-react-swc": "^4.0.1",
     "create-vite": "7.1.1",
     "electron": "38.1.0",
