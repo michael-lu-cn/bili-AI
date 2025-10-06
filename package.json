@@ -32,7 +32,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.4",
+    "@biomejs/biome": "^2.2.5",
     "@npmcli/map-workspaces": "5.0.0",
     "@playwright/test": "1.56.0",
     "@swc/core": "^1.13.20",
