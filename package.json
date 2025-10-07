@@ -39,7 +39,7 @@
     "@types/node": "24.7.0",
     "@vitejs/plugin-react-swc": "^4.1.0",
     "create-vite": "8.0.2",
-    "electron": "38.2.1",
+    "electron": "38.2.2",
     "electron-builder": "26.0.12",
     "glob": "11.0.3",
     "husky": "^9.1.7",
