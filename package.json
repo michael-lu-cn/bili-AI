@@ -34,7 +34,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.2.6",
     "@npmcli/map-workspaces": "5.0.0",
-    "@playwright/test": "1.56.0",
+    "@playwright/test": "1.56.1",
     "@swc/core": "^1.13.20",
     "@types/node": "24.8.1",
     "@vitejs/plugin-react-swc": "^4.1.0",
