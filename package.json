@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
-    "@npmcli/map-workspaces": "5.0.0",
+    "@npmcli/map-workspaces": "5.0.1",
     "@playwright/test": "1.56.1",
     "@swc/core": "^1.13.20",
     "@types/node": "24.9.1",
