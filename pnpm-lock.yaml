@@ -29,7 +29,7 @@ importers:
         version: 24.9.1
       '@vitejs/plugin-react-swc':
         specifier: ^4.1.0
-        version: 4.1.0(vite@7.1.11(@types/node@24.9.1)(terser@5.44.0))
+        version: 4.1.0(vite@7.1.12(@types/node@24.9.1)(terser@5.44.0))
       create-vite:
         specifier: 8.0.2
         version: 8.0.2
@@ -49,8 +49,8 @@ importers:
         specifier: ^5.44.0
         version: 5.44.0
       vite:
-        specifier: ^7.1.11
-        version: 7.1.11(@types/node@24.9.1)(terser@5.44.0)
+        specifier: ^7.1.12
+        version: 7.1.12(@types/node@24.9.1)(terser@5.44.0)
 
   packages/electron-versions: {}
 
@@ -78,8 +78,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: 7.1.11
-        version: 7.1.11(@types/node@24.9.1)(terser@5.44.0)
+        specifier: 7.1.12
+        version: 7.1.12(@types/node@24.9.1)(terser@5.44.0)
 
   packages/preload:
     devDependencies:
@@ -93,8 +93,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: 7.1.11
-        version: 7.1.11(@types/node@24.9.1)(terser@5.44.0)
+        specifier: 7.1.12
+        version: 7.1.12(@types/node@24.9.1)(terser@5.44.0)
 
   packages/renderer:
     dependencies:
@@ -118,8 +118,8 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
       vite:
-        specifier: ^7.1.11
-        version: 7.1.11(@types/node@24.9.1)(terser@5.44.0)
+        specifier: ^7.1.12
+        version: 7.1.12(@types/node@24.9.1)(terser@5.44.0)
 
 packages:
 
@@ -2050,8 +2050,8 @@ packages:
     resolution: {integrity: sha512-veufcmxri4e3XSrT0xwfUR7kguIkaxBeosDg00yDWhk49wdwkSUrvvsm7nc75e1PUyvIeZj6nS8VQRYz2/S4Xg==}
     engines: {node: '>=0.6.0'}
 
-  vite@7.1.11:
-    resolution: {integrity: sha512-uzcxnSDVjAopEUjljkWh8EIrg6tlzrjFUfMcR1EVsRDGwf/ccef0qQPRyOrROwhrTDaApueq+ja+KLPlzR/zdg==}
+  vite@7.1.12:
+    resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2680,11 +2680,11 @@ snapshots:
       '@types/node': 24.9.1
     optional: true
 
-  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.11(@types/node@24.9.1)(terser@5.44.0))':
+  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.12(@types/node@24.9.1)(terser@5.44.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.35
       '@swc/core': 1.13.20
-      vite: 7.1.11(@types/node@24.9.1)(terser@5.44.0)
+      vite: 7.1.12(@types/node@24.9.1)(terser@5.44.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -4201,7 +4201,7 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite@7.1.11(@types/node@24.9.1)(terser@5.44.0):
+  vite@7.1.12(@types/node@24.9.1)(terser@5.44.0):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
