@@ -37,7 +37,7 @@
     "@playwright/test": "1.56.1",
     "@swc/core": "^1.13.20",
     "@types/node": "24.9.1",
-    "@vitejs/plugin-react-swc": "^4.1.0",
+    "@vitejs/plugin-react-swc": "^4.2.0",
     "create-vite": "8.0.2",
     "electron": "38.4.0",
     "electron-builder": "26.0.12",
