@@ -43,7 +43,7 @@
     "electron-builder": "26.0.12",
     "glob": "11.0.3",
     "husky": "^9.1.7",
-    "terser": "^5.44.0",
+    "terser": "^5.44.1",
     "vite": "^7.1.12"
   },
   "dependencies": {
