@@ -35,7 +35,7 @@
     "@biomejs/biome": "^2.3.4",
     "@npmcli/map-workspaces": "5.0.1",
     "@playwright/test": "1.56.1",
-    "@swc/core": "^1.15.0",
+    "@swc/core": "^1.15.1",
     "@types/node": "24.10.0",
     "@vitejs/plugin-react-swc": "^4.2.1",
     "create-vite": "8.0.3",
