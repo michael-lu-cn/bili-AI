@@ -28,8 +28,8 @@ importers:
         specifier: 24.10.0
         version: 24.10.0
       '@vitejs/plugin-react-swc':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@7.2.2(@types/node@24.10.0)(terser@5.44.1))
+        specifier: ^4.2.2
+        version: 4.2.2(vite@7.2.2(@types/node@24.10.0)(terser@5.44.1))
       create-vite:
         specifier: 8.0.3
         version: 8.0.3
@@ -463,8 +463,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@rolldown/pluginutils@1.0.0-beta.46':
-    resolution: {integrity: sha512-xMNwJo/pHkEP/mhNVnW+zUiJDle6/hxrwO0mfSJuEVRbBfgrJFuUSRoZx/nYUw5pCjrysl9OkNXCkAdih8GCnA==}
+  '@rolldown/pluginutils@1.0.0-beta.47':
+    resolution: {integrity: sha512-8QagwMH3kNCuzD8EWL8R2YPW5e4OrHNSAHRFDdmFqEwEaD/KcNKjVoumo+gP2vW5eKB2UPbM6vTYiGZX0ixLnw==}
 
   '@rollup/rollup-android-arm-eabi@4.53.1':
     resolution: {integrity: sha512-bxZtughE4VNVJlL1RdoSE545kc4JxL7op57KKoi59/gwuU5rV6jLWFXXc8jwgFoT6vtj+ZjO+Z2C5nrY0Cl6wA==}
@@ -710,8 +710,8 @@ packages:
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
 
-  '@vitejs/plugin-react-swc@4.2.1':
-    resolution: {integrity: sha512-SIZ/XxeS2naLw4L2vVvpTyujM2OY+Rf+y6nWETqfoBrZpI3SFdyNJof3nQ8HbLhXJ1Eh9e9c0JGYC8GYPhLkCw==}
+  '@vitejs/plugin-react-swc@4.2.2':
+    resolution: {integrity: sha512-x+rE6tsxq/gxrEJN3Nv3dIV60lFflPj94c90b+NNo6n1QV1QQUTLoL0MpaOVasUZ0zqVBn7ead1B5ecx1JAGfA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       vite: ^4 || ^5 || ^6 || ^7
@@ -2493,7 +2493,7 @@ snapshots:
     dependencies:
       playwright: 1.56.1
 
-  '@rolldown/pluginutils@1.0.0-beta.46': {}
+  '@rolldown/pluginutils@1.0.0-beta.47': {}
 
   '@rollup/rollup-android-arm-eabi@4.53.1':
     optional: true
@@ -2680,9 +2680,9 @@ snapshots:
       '@types/node': 24.10.0
     optional: true
 
-  '@vitejs/plugin-react-swc@4.2.1(vite@7.2.2(@types/node@24.10.0)(terser@5.44.1))':
+  '@vitejs/plugin-react-swc@4.2.2(vite@7.2.2(@types/node@24.10.0)(terser@5.44.1))':
     dependencies:
-      '@rolldown/pluginutils': 1.0.0-beta.46
+      '@rolldown/pluginutils': 1.0.0-beta.47
       '@swc/core': 1.15.1
       vite: 7.2.2(@types/node@24.10.0)(terser@5.44.1)
     transitivePeerDependencies:
