@@ -38,7 +38,7 @@
     "@swc/core": "^1.15.1",
     "@types/node": "24.10.1",
     "@vitejs/plugin-react-swc": "^4.2.2",
-    "create-vite": "8.0.3",
+    "create-vite": "8.1.0",
     "electron": "39.1.2",
     "electron-builder": "26.0.12",
     "glob": "11.0.3",
