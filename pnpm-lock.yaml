@@ -106,14 +106,14 @@ importers:
         version: 19.2.0(react@19.2.0)
       zustand:
         specifier: ^5.0.8
-        version: 5.0.8(@types/react@19.2.5)(react@19.2.0)
+        version: 5.0.8(@types/react@19.2.6)(react@19.2.0)
     devDependencies:
       '@types/react':
-        specifier: ^19.2.5
-        version: 19.2.5
+        specifier: ^19.2.6
+        version: 19.2.6
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.5)
+        version: 19.2.3(@types/react@19.2.6)
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
@@ -698,8 +698,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.5':
-    resolution: {integrity: sha512-keKxkZMqnDicuvFoJbzrhbtdLSPhj/rZThDlKWCDbgXmUg0rEUFtRssDXKYmtXluZlIqiC5VqkCgRwzuyLHKHw==}
+  '@types/react@19.2.6':
+    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -952,8 +952,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  csstype@3.2.0:
-    resolution: {integrity: sha512-si++xzRAY9iPp60roQiFta7OFbhrgvcthrhlNAGeQptSY25uJjkfUV8OArC3KLocB8JT8ohz+qgxWCmz8RhjIg==}
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
@@ -2665,13 +2665,13 @@ snapshots:
       xmlbuilder: 15.1.1
     optional: true
 
-  '@types/react-dom@19.2.3(@types/react@19.2.5)':
+  '@types/react-dom@19.2.3(@types/react@19.2.6)':
     dependencies:
-      '@types/react': 19.2.5
+      '@types/react': 19.2.6
 
-  '@types/react@19.2.5':
+  '@types/react@19.2.6':
     dependencies:
-      csstype: 3.2.0
+      csstype: 3.2.3
 
   '@types/responselike@1.0.3':
     dependencies:
@@ -2982,7 +2982,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  csstype@3.2.0: {}
+  csstype@3.2.3: {}
 
   debug@4.4.1:
     dependencies:
@@ -4281,7 +4281,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zustand@5.0.8(@types/react@19.2.5)(react@19.2.0):
+  zustand@5.0.8(@types/react@19.2.6)(react@19.2.0):
     optionalDependencies:
-      '@types/react': 19.2.5
+      '@types/react': 19.2.6
       react: 19.2.0
